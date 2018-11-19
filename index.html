@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <!-- 重置css样式 -->
+    <link rel="stylesheet" href="./static/css/reset.css">
+    <!-- 使用阿里的font文件 -->
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_905836_ofl7l1ds7b.css">
+    <!-- FastClick 是 FT Labs 专门为解决移动端浏览器 300 毫秒点击延迟问题所开发的一个轻量级的库 -->
+    <script src="https://as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js"></script>
+    <script>
+      if ('addEventListener' in document) {
+        document.addEventListener('DOMContentLoaded', function() {
+        FastClick.attach(document.body);
+        }, false);
+      }
+      if(!window.Promise) {
+        document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"'
+        +'>'+'<'+'/'+'script>');
+      }
+    </script>
+    <title>waimai</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
